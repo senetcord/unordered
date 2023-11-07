@@ -1,0 +1,85 @@
+.nav {
+  padding-top: 92px;
+  padding-bottom: 95px;
+  background-color: #eee;
+
+
+  @media screen and (max-width: 767px) {
+    padding-top: 50px;
+  padding-bottom: 95px;
+  }
+
+
+  &__block {
+    display: flex;
+    column-gap: 140px;
+
+    @media screen and (max-width: 1289px) {
+      column-gap: 30px;
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    @media screen and (max-width: 1289px) {
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__studies{
+    @media screen and (max-width: 767px) {
+      
+    }
+  }
+
+  &__studies__title {
+    font-family: "graphik_lcgsemibold";
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 28px;
+  }
+
+  &__studies__img {
+    margin-bottom: 31px;
+  }
+
+  &__studies__logo {
+    margin-bottom: 11px;
+  }
+
+  &__studies__description {
+    width: 290px;
+    margin-bottom: 15px;
+  }
+
+  &__studies__cta {
+    font-family: "graphik_lcgsemibold";
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &__links__block__title {
+    font-family: "graphik_lcgsemibold";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 21px;
+  }
+}
+
+.list li a {
+  font-size: 15px;
+  line-height: 1;
+  margin-bottom: 15px;
+}

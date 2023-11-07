@@ -1,0 +1,90 @@
+.cta {
+  padding-top: 80px;
+  padding-bottom: 148px;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 80px;
+
+    &__title {
+      @include header2;
+    }
+
+    &__text {
+      @include paragraph;
+      text-align: center;
+    }
+  }
+
+  &__blocks {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    &__white {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+
+      padding: 50px 40px;
+      background-color: #fff;
+    }
+
+    &__dark {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+
+      padding: 80px 40px;
+      background-color: #252b42;
+    }
+
+    &__email {
+      @include header6;
+      color: $text-color;
+    }
+
+    &__title {
+      @include header5;
+      color: $text-color;
+    }
+
+    &__btn {
+      color: $primary-color;
+      padding: 10px 20px;
+      border: 1px solid $primary-color;
+      border-radius: 5px;
+    }
+
+    &__email-white {
+      @include header6;
+      color: white;
+    }
+
+    &__title-white {
+      @include header5;
+      color: white;
+    }
+
+    &__btn-white {
+      color: white;
+      padding: 10px 20px;
+      border: 1px solid white;
+      border-radius: 5px;
+    }
+  }
+}
+
+@media (max-width: 929px) {
+  .cta {
+    &__blocks {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+}

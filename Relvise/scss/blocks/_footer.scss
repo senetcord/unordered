@@ -1,0 +1,27 @@
+.footer {
+  padding: 25px 0px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__header {
+    @include header6;
+  }
+
+  &__social {
+    display: flex;
+    gap: 20px;
+    padding-right: 75px;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer {
+    &__container {
+      flex-direction: column-reverse;
+      gap: 10px;
+    }
+  }
+}

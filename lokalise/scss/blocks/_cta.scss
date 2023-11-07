@@ -1,0 +1,28 @@
+.cta {
+  background-color: $orangeBgColor;
+  padding-top: 119px;
+  padding-bottom: 161px;
+
+  &__block {
+    text-align: center;
+  }
+
+  &__block__title {
+    margin-bottom: 29px;
+  }
+
+  &__block__sub-title {
+    margin-bottom: 54px;
+  }
+}
+
+a.cta__block__btn {
+  display: inline-block;
+  color: #fff;
+  font-family: "graphik_lcgsemibold";
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 3.53;
+  background-color: #000;
+  padding: 0px 40.15px;
+}

@@ -1,0 +1,76 @@
+.productivity {
+  padding-top: 154px;
+  padding-bottom: 187px;
+
+  &__title {
+    margin-bottom: 75px;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    @media screen and (max-width: 1289px) {
+      gap: 15px;
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: baseline;
+      gap: 100px;
+    }
+  }
+
+  &__block {
+    max-width: 440px;
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__block__img {
+    margin-bottom: 49px;
+  }
+
+  &__block__title {
+    font-family: "graphik_lcgsemibold";
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.333;
+    margin-bottom: 34px;
+  }
+
+  &__block__text {
+    line-height: 1.5;
+    margin-bottom: 25px;
+    max-width: 409px;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+}
+
+.devs {
+  align-self: center;
+}
+
+.learn-more {
+  line-height: 1.5;
+}
+
+.developers {
+  margin-bottom: 67px;
+}
+
+.translators {
+  margin-bottom: 58px;
+}

@@ -1,0 +1,73 @@
+.cake {
+  background-color: $cakeBgColor;
+  padding-top: 69px;
+  padding-bottom: 80px;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 1289px) {
+      gap: 30px;
+    }
+
+    @media screen and (max-width: 959px) {
+      flex-direction: column;
+    }
+  }
+
+  &__row__left {
+    display: flex;
+    align-items: center;
+    column-gap: 67px;
+
+    @media screen and (max-width: 959px) {
+      flex-direction: column;
+    }
+  }
+
+  &__row__title {
+    font-family: "graphik_lcgsemibold";
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.43;
+
+    @media screen and (max-width: 959px) {
+      text-align: center;
+    }
+  }
+
+  &__row__right {
+    display: flex;
+    align-items: baseline;
+    column-gap: 70px;
+    padding: 30px 0px 22px 71px;
+    border-left: 1px solid black;
+
+    @media screen and (max-width: 959px) {
+      flex-wrap: wrap;
+      row-gap: 70px;
+    }
+
+    @media screen and (max-width: 959px) {
+      border: none;
+      padding: unset;
+      justify-content: center;
+      padding-top: 20px;;
+    }
+  }
+
+  &__row__right__block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__row__right__block__logo {
+    margin-bottom: 20px;
+  }
+
+  &__row__right__block__img {
+    margin-bottom: 14px;
+  }
+}

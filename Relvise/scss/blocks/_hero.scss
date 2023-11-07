@@ -1,0 +1,51 @@
+.hero {
+  padding-bottom: 80px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  &__title {
+    @include header1;
+    max-width: 509px;
+  }
+
+  &__subtitle {
+    @include header4;
+    max-width: 376px;
+  }
+
+  &__btns {
+    display: flex;
+    gap: 10px;
+    &__get {
+      @include btn-text;
+      color: $light-color;
+      border-radius: 37px;
+      background-color: $primary-color;
+      padding: 10px 36px;
+    }
+
+    &__more {
+      @include btn-text;
+      color: $secondary-color;
+      border: 1px solid $secondary-color;
+      border-radius: 37px;
+      padding: 10px 36px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .hero {
+    &__title {
+      font-size: 44px;
+    }
+
+    &__btns {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.businessCard {
+  padding-top: 42px;
+  padding-bottom: 40px;
+  background-color: #fff;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__title {
+      @include header3;
+    }
+
+    &__text {
+      @include paragraph;
+    }
+  }
+
+  &__right {
+    padding-right: 75px;
+    &__btn {
+      padding: 15px 40px;
+      background-color: $primary-color;
+      font-family: "Montserrat", sans-serif;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 200%;
+      letter-spacing: 0.2px;
+      border-radius: 5px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .businessCard {
+    &__container {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
+}

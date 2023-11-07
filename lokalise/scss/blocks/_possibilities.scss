@@ -1,0 +1,41 @@
+.possibilities {
+  background-color: $possibititiesBgColor;
+
+  &__title {
+    padding-top: 120px;
+    text-align: center;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 75px 110px;
+    padding-top: 58px;
+    padding-bottom: 147px;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  &__block {
+    max-width: 330px;
+  }
+
+  &__block__img {
+    margin-bottom: 26px;
+  }
+
+  &__block__title {
+    margin-bottom: 20px;
+    font-family: "graphik_lcgsemibold";
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  &__block__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.39;
+  }
+}
+

@@ -1,0 +1,49 @@
+.cards {
+  padding-bottom: 80px;
+  &__container {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 35px 40px;
+    background-color: #fff;
+
+    &__img {
+      max-width: 48px;
+    }
+
+    &__title {
+      @include header3;
+    }
+
+    &__text {
+      @include paragraph;
+    }
+  }
+
+  .dark-green-card {
+    background-color: $secondary-color;
+
+    &-h3 {
+      color: #fff;
+    }
+
+    &-text {
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 929px) {
+  .cards {
+    &__container {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

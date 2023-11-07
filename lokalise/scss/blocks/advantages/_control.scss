@@ -1,0 +1,39 @@
+.control,
+.rows {
+  display: flex;
+  align-items: center;
+  margin-top: 90px;
+  margin-bottom: 250px;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1289px) {
+    margin-bottom: 150px;
+    gap: 15px;
+  }
+
+  @media screen and (max-width: 959px) {
+    flex-direction: column;
+  }
+}
+
+.control__discription__title {
+  margin-bottom: 40px;
+}
+
+.text {
+  line-height: 1.5;
+}
+
+.control__discription__text {
+  margin-bottom: 40px;
+  max-width: 491px;
+}
+
+.start {
+  font-family: "graphik_lcgsemibold";
+  line-height: 1.5;
+}
+
+a.underline {
+  text-decoration: underline;
+}

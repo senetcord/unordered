@@ -1,0 +1,85 @@
+a {
+  transition: color 0.2s ease-in;
+
+  &:hover {
+    color: $textHoverColor;
+  }
+}
+
+.header__img {
+  transition: transform 0.2s ease-in;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.header-log,
+.header-try {
+  transition: background-color 0.25s ease-in, color 0.2s ease-in,
+    transform 0.25s ease-in;
+}
+
+.header-log:hover {
+  background-color: $secondaryBtnHoverColor;
+  color: white;
+  transform: scale(1.05);
+}
+
+.header-try:hover {
+  background-color: $mainBtnHoverColor;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Hero */
+
+.hero-demo,
+.hero-try {
+  transition: background-color 0.25s ease-in, color 0.2s ease-in,
+    transform 0.25s ease-in;
+}
+
+.hero-demo:hover {
+  background-color: $secondaryBtnHoverColor;
+  color: white;
+  transform: scale(1.05);
+}
+
+.hero-try:hover {
+  background-color: $mainBtnHoverColor;
+  color: white;
+  transform: scale(1.05);
+}
+
+.touch {
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+a {
+  &.integrate__block__btn {
+    transition: background-color 0.25s ease-in, color 0.2s ease-in,
+      transform 0.25s ease-in;
+
+    &:hover {
+      background-color: $mainBtnHoverColor;
+      color: black;
+      transform: scale(1.2);
+    }
+  }
+
+  &.cta__block__btn {
+    transition: background-color 0.25s ease-in, color 0.2s ease-in,
+      transform 0.3s ease-in;
+
+    &:hover {
+      background-color: black;
+      color: wheat;
+      transform: scale(1.1);
+    }
+  }
+}

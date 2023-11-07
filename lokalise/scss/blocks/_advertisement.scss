@@ -1,0 +1,21 @@
+.advertisement {
+  background-color: $orangeBgColor;
+
+  &__title {
+    text-align: center;
+    padding-top: 108px;
+  }
+
+  &__row {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 104px;
+    align-items: center;
+
+    @media screen and (max-width: 1289px) {
+      flex-wrap: wrap;
+      gap: 100px;
+    }
+  }
+}

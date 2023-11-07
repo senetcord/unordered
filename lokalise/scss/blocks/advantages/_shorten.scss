@@ -1,0 +1,14 @@
+.shorten__discription__title {
+  margin-bottom: 40px;
+}
+
+.shorten__discription__text {
+  max-width: 450px;
+  margin-bottom: 40px;
+}
+
+.shorten{
+  @media screen and (max-width: 959px) {
+    flex-direction: column-reverse;
+  }
+}

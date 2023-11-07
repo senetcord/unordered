@@ -1,0 +1,35 @@
+.appartments {
+    position: relative;
+
+    &::before {
+        content: "III";
+        @include decorNumber;
+
+
+        right: calc(50% + 550px);
+        transform: translate(50%, 0);
+
+        line-height: 1;
+    }
+}
+
+.appartsment__title {
+    margin-bottom: 88px;
+
+    @include mediaTablet {
+        margin-bottom: 44px;
+    }
+}
+
+
+
+.appartsment__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 30px;
+
+    @include mediaTablet {
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    }
+}

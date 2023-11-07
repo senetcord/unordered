@@ -1,0 +1,45 @@
+.integrate {
+  padding-top: 169px;
+  padding-bottom: 162px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  &__block {
+    text-align: center;
+  }
+
+  &__block__title {
+    font-family: "graphik_lcgsemibold";
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 1.15;
+
+    @media screen and (max-width: 767px) {
+      font-size: 50px;
+    }
+  }
+
+  &__block__sub-title {
+    font-size: 25px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+  }
+
+  &__block__img {
+    margin-bottom: 32px;
+  }
+}
+
+a.integrate__block__btn {
+  display: inline-block;
+  background-color: $mainBtnColor;
+  padding: 0px 21px;
+  font-size: 16px;
+  color: #fff;
+  font-family: "graphik_lcgsemibold";
+  font-weight: 600;
+  line-height: 3.75;
+}

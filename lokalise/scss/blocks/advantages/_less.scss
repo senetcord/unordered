@@ -1,0 +1,16 @@
+.less__discription__title {
+  margin-bottom: 40px;
+}
+
+.less__discription__text {
+  margin-bottom: 40px;
+  max-width: 520px;
+}
+
+.less {
+  margin-bottom: 150px;
+    @media screen and (max-width: 959px) {
+      flex-direction: column-reverse;
+      margin-bottom: 100px;
+    }
+}
